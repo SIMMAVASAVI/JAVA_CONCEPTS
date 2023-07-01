@@ -8,3 +8,13 @@ Do we have access modifiers for constructors ?
 Ans - Yes, all access modifiers are applicable to constructors.
 
 if we add a constructor, java will not provide default constructor
+
+
+2 or more  variables holding  the same object reference is called sallow copy
+S s1=new S();
+s2=s1
+
+2 or more variables holding different object reference but same values is called deep copy
+S s1=new S();
+S s2=new S(s1);
+
