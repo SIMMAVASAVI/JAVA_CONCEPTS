@@ -1,0 +1,14 @@
+** Queue **
+
+Queue is a linear data structure.
+Follows First In First Out (FIFO) algorithm to serve the elements.
+Enqueue and dequeue done in O(1).
+Used in algorithms such as Breadth First Search.
+
+
+** Priority Queue **
+
+Priority Queue is an extension of Queue with priority factor embedded.
+Serves the element with higher priority first.
+Enqueue and dequeue done in O(log n) using binary heaps.
+Used in algorithms such as Dijkstra’s Algorithm, Prim’s Algorithms, CPU Scheduling.

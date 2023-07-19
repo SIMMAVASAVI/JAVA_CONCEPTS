@@ -1,0 +1,31 @@
+Features	                               HashSet	                                       LinkedHashSet	                                                 TreeSet
+-------------------
+
+Internal Working    HashSet internally uses HashMap for storing ,       LinkedHashSet uses LinkedHashMap internally to store objects,  TreeSet uses TreeMap internally to store objects.
+                    objects
+
+When To Use         If you don’t want to maintain insertion order but	If you want to maintain the insertion order of elements then 	If you want to sort the elements according to some
+                    want to store unique objects,                       you can use LinkedHashSet,                                      Comparator then use TreeSet.
+
+Order               HashSet does not maintain insertion order,       	LinkedHashSet maintains the insertion order of objects,         While TreeSet orders the elements according to supplied Comparator.
+                                                                                                                                        By default, objects will be placed according to their natural ascending order.
+
+Complexity of       HashSet gives O(1) complexity for insertion, 	    LinkedHashSet gives insertion, removing, and retrieving 	    While TreeSet gives the performance of order O(log(n)) for insertion,
+Operations          removing, and retrieving objects                    operations performance in order O(1).                           removing, and retrieving operations.
+
+Performance         The performance of HashSet is better when 	        The performance of LinkedHashSet is slower than TreeSet. 	    TreeSet performance is better than LinkedHashSet except for insertion and
+                    compared to LinkedHashSet and TreeSet.              It is almost similar to HashSet but slower because              removal operations because it has to sort the elements after each insertion
+                                                                        LinkedHashSet internally maintains LinkedList to maintain the   and removal operation.
+                                                                        insertion order of elements
+
+Compare	            HashSet uses equals() and hashCode() methods	    LinkedHashSet uses equals() and hashCode() methods to          TreeSet uses compare() and compareTo() methods to compare the objects
+                    to compare the objects	                            compare it’s objects
+
+Null Elements       HashSet allows only one null value.	                LinkedHashSet allows only one null value.                      TreeSet does not permit null value. If you insert null value into TreeSet,
+                                                                                                                                       it will throw NullPointerException.
+
+Syntax              HashSet obj = new HashSet();                        LinkedHashSet obj = new LinkedHashSet();                       TreeSet obj = new TreeSet();
+
+------------------
+
+

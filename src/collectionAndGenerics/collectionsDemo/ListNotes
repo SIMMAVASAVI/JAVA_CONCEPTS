@@ -1,0 +1,86 @@
+** Array List: **
+
+Array List is an implemented class of List interface which is present in package java.util.
+Array List is created on the basis of the growable or resizable array.
+And Array List is an index-based data structure. In ArrayList, the element is stored in a contiguous location.
+It can store different data types. And random access is allowed. We can also store the duplicate element in Array List.
+It can store any number of null values.
+
+When you should not use ArrayList: ArrayList is not recommended if you are adding/removing elements in a specified position frequently .
+Because it requires several shift operation for adding/removing operations.
+
+get(int index)  :    O(1)  // Main Advantage of ArrayList
+add(E element) :  O(1) amortized constant time , O(n) worst case because array should be resized and copied.
+add(int index, E element): O(n – index) amortized constant time, O(n) worst case because array should be resized and copied to the new array.
+remove (int index) :  O(n – index) , O(1) for removing last element.
+Iterator.remove() :  O(n – index)
+ListIterator.add(E element) : O(n – index)
+
+**Linked List: **
+
+Linked list is a linear data structure where data are not stored sequentially inside the computer memory but they are
+link with each other by the address.(Under lying data structure is doubly linked list)
+The best choice of linked list is deletion and insertion and worst choice is retrieval .
+In Linked list random access is not allowed .
+It traverse through iterator.
+
+When to use Linked List: Use linked list, if your requirement is more on adding or removing elements of a collection objects.
+
+
+1) List list = new LinkedList();
+   It creates an empty linked list.
+
+2) public boolean add(E e);
+   It adds the specified element at the end of the list.
+
+3) public void addFirst(E e);
+   It adds the specified element in the beginning of the list.
+
+4) public void addLast(E e);
+   It adds the specified element to the end of the list.
+
+5) public E removeFirst();
+   It removes and returns the first element from the list.
+
+6) public E removeLast();
+   It removes and returns the last element from the list.
+
+7) public E getFirst();
+   It returns the first element from the list.
+
+8) public E getLast();
+   It returns the last element from the list.
+
+get(int index) :  O(n)
+add(E element): O(1) // Main Advantage of Linked list.
+add(int index, E element) :  O(n)
+remove(int index) :  O(n)
+Iterator.remove() : O(1) // Main Advantage of Linked list.
+ListIterator.add(E element) : O(1) // Main Advantage of Linked list.
+
+** Stack **
+
+Stack is child class of Vector
+Stack class in java represents LIFO (Last in First Out) stack of objects.
+There are only 5 methods in Stack
+
+1) public E push(E item);
+   Pushes the item on top of the stack
+
+2) public synchronized E pop();
+   Removes the item at the top of the stack and returns that item
+
+3) public synchronized E peek();
+   Returns the item at the top of the statck
+
+4) public boolean empty();
+   Checks whether stack is empty or not
+
+5) public synchronized int search(Object o);
+   Returns the position of an object in the stack.
+
+
+
+
+
+
