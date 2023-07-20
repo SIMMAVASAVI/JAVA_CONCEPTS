@@ -36,6 +36,14 @@ public class Client {
         QueueDemo queueDemo= new QueueDemo(arrayDeQueue);
         queueDemo.listArrayDequeActions();
 
+        //----------------------------------- HashMap ---------------------------------
+
+        HashMap<String, Integer> hashMap= new HashMap<>();
+        HashMapDemo hashMapDemo= new HashMapDemo(hashMap);
+        hashMap.put("Deepan",1);
+        hashMap.put("Priyanka",2);
+        hashMap.put("Priyanka",1); // when we insert the same key with a value, current value gets overridden
+        System.out.println(hashMap);
 
 
     }
